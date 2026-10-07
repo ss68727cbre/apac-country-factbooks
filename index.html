@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>APAC Enterprise Country Factbooks</title>
+<title>APAC Enterprise Country Overview</title>
 <meta name="description" content="CBRE Enterprise Accounts country overviews across Asia Pacific">
 <style>
   /* ---------- CBRE brand tokens ---------- */
@@ -168,7 +168,7 @@
 <!-- ===================== LANDING ===================== -->
 <section id="landing">
   <div class="landing-banner" id="banner">
-    <h1>APAC Enterprise Country Factbooks</h1>
+    <h1>APAC Enterprise Country Overview</h1>
   </div>
   <div class="landing-wrap">
     <div class="tiles" id="tiles"></div>
@@ -811,7 +811,7 @@ function renderCountry(c){
     </div>
     <div class="cp-foot"><span>Confidential &amp; Proprietary | &copy; 2026 CBRE, Inc.</span><span>${c.name}</span></div>`;
   $("#jump").value = c.key;
-  document.title = `${c.name} | APAC Enterprise Country Factbooks`;
+  document.title = `${c.name} | APAC Enterprise Country Overview`;
 }
 
 function route(){
@@ -825,7 +825,7 @@ function route(){
   } else {
     $("#country").classList.add("hidden");
     $("#landing").classList.remove("hidden");
-    document.title = "APAC Enterprise Country Factbooks";
+    document.title = "APAC Enterprise Country Overview";
     if (key !== "home") history.replaceState(null,"","#home");
   }
 }
