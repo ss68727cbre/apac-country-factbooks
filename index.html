@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>APAC Enterprise Country Overview</title>
+<title>APAC Enterprise Country Factbooks</title>
 <meta name="description" content="CBRE Enterprise Accounts country overviews across Asia Pacific">
 <style>
   /* ---------- CBRE brand tokens ---------- */
@@ -157,6 +157,44 @@
 
   .cp-foot{display:flex;justify-content:space-between;font-size:11px;color:rgba(255,255,255,.9);margin-top:34px}
 
+  /* ---------- Page 2: Critical Considerations for Bidding & Trading ---------- */
+  .page-break{height:14px;background:var(--bg);margin:40px -56px 46px}
+  @media (max-width:820px){.page-break{margin-left:-24px;margin-right:-24px}}
+  .p2-head{display:grid;grid-template-columns:400px 1fr;gap:32px;align-items:start}
+  @media (max-width:1100px){.p2-head{grid-template-columns:1fr}}
+  .p2-title{font-family:var(--serif);font-size:48px;line-height:1.05;margin:0;font-weight:400}
+  .p2-title em{font-style:normal;color:var(--cbre-accent)}
+  @media (max-width:700px){.p2-title{font-size:36px}}
+  .p2-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:start}
+  @media (max-width:900px){.p2-cards{grid-template-columns:1fr}}
+  .p2-cards h2{font-size:17px;font-weight:700;margin:0 0 10px}
+  .fact-card{background:var(--panel);color:var(--text);padding:18px 18px 16px;border-radius:2px;min-height:100%}
+  .fact-card .ftitle{font-family:var(--serif);font-size:21px;line-height:1.15;margin:0 0 8px}
+  .fact-card p{margin:0 0 8px;font-size:13px;line-height:1.45}
+  .fact-card p:last-child{margin-bottom:0}
+  .p2-body{display:grid;grid-template-columns:1fr 1.15fr 1.15fr;gap:0}
+  @media (max-width:1250px){.p2-body{grid-template-columns:1fr 1fr}.p2-body .cp-col.p2-contacts{grid-column:1/-1;border-left:0;border-top:1px solid rgba(255,255,255,.35);padding:28px 0 0;margin-top:28px}}
+  @media (max-width:820px){.p2-body{grid-template-columns:1fr}}
+  .kpis{display:grid;grid-template-columns:1fr 1fr;gap:18px 20px;margin-bottom:22px}
+  .kpi .num{font-size:34px;line-height:1;color:var(--cbre-accent);letter-spacing:-.5px}
+  .kpi .lbl{font-size:13px;margin-top:6px;line-height:1.3}
+  ul.p2-bullets{margin:0;padding-left:18px;font-size:14px;line-height:1.45}
+  ul.p2-bullets li{margin-bottom:10px}
+  ul.p2-bullets li::marker{color:var(--cbre-accent)}
+  .p2-sub{font-size:20px;font-weight:700;margin:30px 0 14px}
+  .customers{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  @media (max-width:560px){.customers{grid-template-columns:repeat(2,1fr)}}
+  .customers span{background:var(--panel);color:var(--text);font-size:13px;text-align:center;padding:8px 6px;border-radius:2px;line-height:1.2;display:flex;align-items:center;justify-content:center;min-height:36px}
+  .kcontacts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px 14px}
+  @media (max-width:560px){.kcontacts{grid-template-columns:repeat(2,1fr)}}
+  .kc .krole{color:var(--cbre-accent);font-size:11px;letter-spacing:.06em;text-transform:uppercase;line-height:1.25}
+  .kc .kname{font-size:15px;margin-top:3px;line-height:1.2}
+  .kc a{display:block;font-size:11.5px;color:#fff;word-break:break-all;margin-top:2px}
+  .locations{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media (max-width:560px){.locations{grid-template-columns:1fr}}
+  .loc .lname{font-weight:700;font-size:14px;margin-bottom:4px}
+  .loc .laddr{font-size:13px;line-height:1.4}
+
   @media print{
     .country-nav{display:none}
     .country-page{min-height:0}
@@ -168,7 +206,7 @@
 <!-- ===================== LANDING ===================== -->
 <section id="landing">
   <div class="landing-banner" id="banner">
-    <h1>APAC Enterprise Country Overview</h1>
+    <h1>APAC Enterprise Country Factbooks</h1>
   </div>
   <div class="landing-wrap">
     <div class="tiles" id="tiles"></div>
@@ -691,6 +729,2142 @@ const ICONS = {
 };
 
 /* =====================================================================
+   PAGE 2 DATA - 'Critical Considerations for Bidding & Trading' (slide 3)
+   Keyed by country key. cards = Annual Calendar + Must Know Operation Facts;
+   kpis = [value,label]; contacts = [role,name,email]; locations = [name, ...address lines].
+   Bullet / card text may contain <b> markup copied from the slides.
+   ===================================================================== */
+const PAGE2 = {
+ "pakistan": {
+  "cards": [
+   {
+    "section": "Pakistan Annual Calendar",
+    "title": "Semi-Annual Conference",
+    "body": [
+     "Month of <b>April</b>",
+     "CBRE Pakistan’s Semi-Annual Town Hall brought together leadership and employees from across the business to review key achievements, business performance, and strategic priorities for the year ahead"
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 1",
+    "title": "Operational Excellence as a Baseline",
+    "body": [
+     "Clients expect timely delivery, accuracy, and consistent service quality, with limited tolerance for operational disruptions. Increasing emphasis is placed on transparency, digital reporting, and real-time performance visibility"
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 2",
+    "title": "Relationship-Driven Market Dynamics",
+    "body": [
+     "Many key sectors are influenced by strategic entities, making stakeholder engagement and a strong understanding of frameworks critical to business success. Commercial decisions are often shaped by broader regional strategic priorities alongside commercial considerations"
+    ]
+   }
+  ],
+  "kpis": [
+   [
+    "18% / 15%",
+    "Goods and Services Tax"
+   ],
+   [
+    "8.33%",
+    "GF Contribution"
+   ],
+   [
+    "60 days",
+    "Usual Payment terms"
+   ],
+   [
+    "29%",
+    "Corporate Tax Rate"
+   ],
+   [
+    "1% / 8%",
+    "Super Tax"
+   ]
+  ],
+  "regulatory": [
+   "18% Goods and 15% / 16% Service tax (province-wise) (GST) applied on all services provided by CBRE",
+   "Super tax is applicable, ranging from 1% to 8%, depending on the company&#x27;s profit above PKR 150 million",
+   "Payment terms (with vendors) are typically 60 days",
+   "Government &amp; Insurance-related contracts typically follow prompt payment policies (&lt;15days)."
+  ],
+  "trading": [
+   "CBRE Pakistan leverages in-house technical expertise to deliver Technical Systems services, Electrical Scanning, and a range of minor project works, ensuring quality, responsiveness, and efficient execution.",
+   "CBRE Pakistan maintains strong self-delivery capabilities across core Technical and Integrated Facilities Management (IFM) services, supported by specialized expertise in competency verification and building management services.",
+   "In Pakistan, <b>HSE Red Scope</b> activities include self-performed catering services, including provision of cooks and catering staff. All are performed in accordance with approved HSE compliance &amp; governance processes."
+  ],
+  "contacts": [
+   [
+    "HSE",
+    "Faisal, Faryal",
+    "Faryal.faisal@cbre.com"
+   ],
+   [
+    "SALES",
+    "Wasif Chaudhry",
+    "Wasif.chaudhry@cbre.com"
+   ],
+   [
+    "FINANCE",
+    "Khurshid, Noman",
+    "Noman.Khurshid@cbre.com"
+   ],
+   [
+    "D&T",
+    "Gulab, Adil",
+    "Adil.Gulab@cbre.com"
+   ],
+   [
+    "PEOPLE",
+    "Kherati, Adnan",
+    "Adnan.Kherati@cbre.com"
+   ],
+   [
+    "ETHICS & COMPLIANCE",
+    "Merchant, Noureen",
+    "noureen.merchant@cbre.com"
+   ],
+   [
+    "PROCUREMENT",
+    "Khan, Yusra",
+    "Yusra.khan1@cbre.com"
+   ],
+   [
+    "LEGAL",
+    "Yusuf Dockrat",
+    "yusuf.dockrat@cbre.com"
+   ],
+   [
+    "PROJECT MANAGEMENT",
+    "Shahid, Salman",
+    "Salman.Shahid@cbre.com"
+   ],
+   [
+    "OPERATIONS",
+    "Zafar, Usman",
+    "Usman.Zafar@cbre.com"
+   ],
+   [
+    "LOCAL",
+    "Wasif Chaudhry",
+    "Wasif.chaudhry@cbre.com"
+   ]
+  ],
+  "customers": [
+   "Citi",
+   "Coca Cola",
+   "Deutsche Bank",
+   "Ericsson",
+   "General Electric",
+   "Google (PjM)",
+   "Haleon",
+   "Pfizer",
+   "Syngenta",
+   "S&P Global",
+   "Tetra Pak",
+   "Wafi (Shell Licensee)"
+  ],
+  "locations": [
+   [
+    "CBRE Pakistan Headquarters",
+    "Suit#602, The Forum,",
+    "Clifton Block-9, Khayaban e Jami,",
+    "Karachi, Pakistan"
+   ]
+  ]
+ },
+ "vietnam": {
+  "cards": [
+   {
+    "section": "Vietnam Annual Calendar",
+    "title": "Tet Holiday Month of <b>January / February</b>",
+    "body": [
+     "Key holidays like Tet leads to extended leave and travel home, slowing most businesses except travel / retail. Annual shutdowns typically occur for 7 to 9 consecutive days within late January or February, triggering a nationwide pause that leaves corporate offices empty and halts specialized vendor services.",
+     "Organizations must avoid scheduling facilities transitions, major system overhauls, or complex project handovers during this period, as material supply chains freeze and emergency technical support becomes extremely limited."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 1",
+    "title": "Segment Analysis",
+    "body": [
+     "Facility management – Soft Service held 55.7% of Vietnam integrated facility management (IFM) market share in 2025",
+     "Facility management – Hard Service is projected to grow at a 6.4% CAGR from 2026 to 2031, making it the fastest-growing service type in the Vietnam IFM."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 2",
+    "title": "Complex Regulations",
+    "body": [
+     "Integrated Facility Management sector is highly constrained by a complex web of overlapping regulations. Service Providers must navigate administrative delays from frequent corporate charter updates, direct legal liabilities for maintaining Mechanical, Electrical, and Plumbing (MEP) uptime, structural safety, and technical compliance under strict post-supervision laws, and risk-based environmental audits."
+    ]
+   }
+  ],
+  "kpis": [
+   [
+    "0%-10%",
+    "Value-Added  Tax"
+   ],
+   [
+    "21.5%",
+    "SHUI Contribution"
+   ],
+   [
+    "60 days",
+    "Usual Payment terms"
+   ],
+   [
+    "20%",
+    "Corporate Tax Rate"
+   ]
+  ],
+  "regulatory": [
+   "Value-Added Tax (VAT) varies from 0% to 10% depends on goods nature",
+   "Payment terms (with vendors) are typically 60 days",
+   "The employer&#x27;s contribution rate (SHUI) stands at 21.5% for local employees, covering compulsory social, health, and unemployment insurance."
+  ],
+  "trading": [
+   "CBRE Vietnam strategically self-performs core engineering management, building automation oversight and technical compliance auditing using our dedicated local specialized engineering teams.",
+   "Soft services and highly specialized hard services are delivered via a strictly vetted, CBRE-managed network of local partners, providing a single point of accountability under a unified Service Level Agreement (SLA) / Key Performance Indicators (KPI) framework to mitigate local licensing and operational risks.",
+   "In Vietnam, <b>HSE Red Scope </b>activities include drinking water compliance, emergency response, wastewater treatment &amp; catering services. All are performed in accordance with approved HSE compliance &amp; governance processes."
+  ],
+  "contacts": [
+   [
+    "HSE",
+    "Long, Nguyen",
+    "Long.NguyenHoang1@cbre.com"
+   ],
+   [
+    "SALES",
+    "Quinn, Nguyen",
+    "Quynh.NguyenKhanhThu@cbre.com"
+   ],
+   [
+    "PEOPLE",
+    "Jane, Bui",
+    "Thao.BuiThiPhuong@cbre.com"
+   ],
+   [
+    "FINANCE",
+    "Alice, Phan",
+    "minh.van.phan.huynh@cbre.com"
+   ],
+   [
+    "PROCUREMENT",
+    "Tran, Tran",
+    "Tran.TranVinhBao@cbre.com"
+   ],
+   [
+    "PROPERTY MANAGEMENT",
+    "Ngoc, Chu",
+    "Ngoc.Chu@cbre.com"
+   ],
+   [
+    "ADVISORY",
+    "Hang, Dang",
+    "hang.dang@cbre.com"
+   ],
+   [
+    "LEGAL",
+    "Yusuf Dockrat",
+    "yusuf.dockrat@cbre.com"
+   ],
+   [
+    "ETHICS & COMPLIANCE",
+    "Thao Huynh Vu Yen",
+    "thao.huynhvuyen@cbre.com"
+   ],
+   [
+    "LOCAL / DCS / EAAS",
+    "Quinn, Nguyen",
+    "Quynh.NguyenKhanhThu@cbre.com"
+   ],
+   [
+    "T&T",
+    "Viet, Le",
+    "viet.lehaduy@turntown.com"
+   ],
+   [
+    "TRANSACTION MANAGEMENT",
+    "Ngoc, Chu",
+    "tronghieu.le@cbre.com"
+   ]
+  ],
+  "customers": [
+   "Apple",
+   "AkzoNobel",
+   "Bosch",
+   "Citi",
+   "Deutsche Bank",
+   "Iron Mountain",
+   "Kimberly Clark",
+   "LEGO",
+   "Manulife",
+   "Sanofi",
+   "SIEMENS",
+   "Syngenta"
+  ],
+  "locations": [
+   [
+    "CBRE Vietnam Headquarters",
+    "13th Floor, AB Tower | 76A Le Lai Street, Ben Thanh Ward,  Ho Chi Minh City, Vietnam"
+   ],
+   [
+    "CBRE Vietnam Branch Office",
+    "7th Floor, Tower 2, Capital Place, 29 Lieu Giai Street, Ngoc Ha Ward, Hanoi City, Vietnam."
+   ]
+  ]
+ },
+ "china": {
+  "cards": [
+   {
+    "section": "Annual Calendar",
+    "title": "Events",
+    "body": [
+     "Client Appreciation Event and CBRE Supplier Event held in Q4 are dedicated to strengthening relationships and celebrating collaboration with our valued partners."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 1",
+    "title": "Government Restriction",
+    "body": [
+     "The GWS China entity is not licensed to provide labor-only services (like body shop roles).",
+     "Catering and Transportation services are  recommended to use the MA model instead of the Principal model due to local regulation."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 2",
+    "title": "Transfer Personnel Restriction",
+    "body": [
+     "For workforce transfers from a client or incumbent vendor, a <b>“clean break” principle</b> must be observed as China has no TUPE/ARD equivalent."
+    ]
+   }
+  ],
+  "kpis": [
+   [
+    "6%, 9%, 13%",
+    "Various Value Added Tax"
+   ],
+   [
+    "25%",
+    "Corporate Tax Rate"
+   ],
+   [
+    "60 days",
+    "Usual Payment terms"
+   ]
+  ],
+  "regulatory": [
+   "Value Added Tax (VAT) rates vary by service type; consult the local tax manager before any transaction",
+   "Government contracts typically follow prompt payment policies (~30 days)",
+   "“Pay-when-paid” provisions are unenforceable for SMEs in China, and where client payment terms exceed 60 days, capital costs must be factored into pricing."
+  ],
+  "trading": [
+   "CBRE China has self-performance capabilities for Mechanical &amp; Electrical Systems and principle/minor work projects",
+   "Labor intensive services (e.g. cleaning/security) requires extra attention for due diligence to ensure client- transferred operation models and baselines are in compliance with the regulation, especially overtime, minimum wage and social benefits",
+   "In China, CBRE does not perform <b>HSE Red Scope</b> activities without formal approval through the HSE compliance &amp; governance processes."
+  ],
+  "contacts": [
+   [
+    "EAAS",
+    "Zhou, George",
+    "zheng.gan.zhou@cbre.com"
+   ],
+   [
+    "SALES",
+    "Sun, Susan",
+    "Susan.Sun@cbre.com"
+   ],
+   [
+    "FINANCE",
+    "Liu, Selena",
+    "selena.y.liu@cbre.com"
+   ],
+   [
+    "FLEX & PROGRAM",
+    "Theresa Wang",
+    "Theresa.wang@cbre.com"
+   ],
+   [
+    "PEOPLE",
+    "Sun, Chris",
+    "Chris.Sun@cbre.com.cn"
+   ],
+   [
+    "PROCUREMENT",
+    "Cai, Suki",
+    "Suki.Cai@cbre.com"
+   ],
+   [
+    "HSE",
+    "Zhang, Frank",
+    "Zhenyu.Zhang@cbre.com"
+   ],
+   [
+    "LOCAL",
+    "Tang, Tony",
+    "Tony.Tang4@cbre.com"
+   ],
+   [
+    "T&T",
+    "Wei, Junwei",
+    "junwei.wei@turntown.com"
+   ],
+   [
+    "ETHICS & COMPLIANCE",
+    "Ying Huang",
+    "ying.huang5@cbre.com"
+   ],
+   [
+    "ADVISORY",
+    "Goodman, David",
+    "David.Goodman@cbre.com.cn"
+   ],
+   [
+    "TRANSACTION MANAGEMENT",
+    "Cheung, Gary",
+    "Gary.Cheung@cbre.com.cn"
+   ],
+   [
+    "LEGAL",
+    "Sylvia He",
+    "sylvia.he@cbre.com"
+   ],
+   [
+    "DCS",
+    "Yang Xiao Li",
+    "Xiaoli.Yang@cbre.com"
+   ]
+  ],
+  "customers": [
+   "Apple",
+   "Akzo Nobel",
+   "Bosch",
+   "Coca Cola",
+   "Dow Chemical",
+   "Exxon Mobil",
+   "Honeywell",
+   "JCI",
+   "Kenvue",
+   "Nike",
+   "Sanofi",
+   "Tetrapak"
+  ],
+  "locations": [
+   [
+    "CBRE GWS Shanghai  Office",
+    "Room 3203, 32nd Floor East Tower, Raffles City the Bund, 1089 Dongdaming Road, Hongkou District, Shanghai, PRC 200082"
+   ],
+   [
+    "CBRE Beijing Office",
+    "29th Floor, North Tower, CP Center,",
+    "20 Jinhe East Road, Chaoyang District, Beijing, PRC 100020"
+   ]
+  ]
+ },
+ "korea": {
+  "cards": [
+   {
+    "section": "Korea Annual Calendar",
+    "title": "Leadership Workshop",
+    "body": [
+     "Month of July",
+     "Annual leadership workshop bringing together Site Leads and functional leaders to align priorities, share best practices, and strengthen collaboration across Korea."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 1",
+    "title": "Stringent Dispatch &amp; Labor Law",
+    "body": [
+     "Yellow Envelope Law",
+     "Changes to labor regulations, including the “Yellow Envelope Law,” require increase legal and operational risk in managing outsourced workforce and subcontractors."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 2",
+    "title": "EHS Compliance",
+    "body": [
+     "Serious Accident Punishment Act (SAPA)",
+     "Compliance with SAPA requires enhanced safety management, contractor oversight and preventative risk control across all operations."
+    ]
+   }
+  ],
+  "kpis": [
+   [
+    "10%",
+    "Value Added Tax (VAT)"
+   ],
+   [
+    "21%",
+    "Statutory Benefits and DC Pension"
+   ],
+   [
+    "60 days",
+    "Usual Payment terms"
+   ],
+   [
+    "25%",
+    "Corporate Tax Rate"
+   ]
+  ],
+  "regulatory": [
+   "10% Value Added tax (VAT) applied on all services provided by CBRE",
+   "Payment terms (with vendors) are typically 60 days",
+   "Statutory benefits and DC pension may vary depending on individual salary and length of service.",
+   "Annual minimum wage increases and inflation (CPI) are major cost drivers affecting labor-intensive services and annual pricing strategy."
+  ],
+  "trading": [
+   "Korea is the sole EA country, but has proactively engaged with and incorporated LA requirements at both regional /global. Our customized, client-centric consulting and service design have enabled the expansion of the local business model.",
+   "EaaS is a rapidly growing business in Korea, delivering higher profit margins than traditional FM services. Strong client demand makes it a key driver of business growth, with plans to further develop it into a specialized engineering consulting and customized service.",
+   "In Korea, CBRE does not perform <b>HSE Red Scope</b> activities without formal approval through the HSE compliance &amp; governance processes."
+  ],
+  "contacts": [
+   [
+    "HSE",
+    "John Lee",
+    "john.lee@cbre.com"
+   ],
+   [
+    "SALES",
+    "Hyejin Chung",
+    "hyejin.chung@cbre.com"
+   ],
+   [
+    "TRANSACTION MANAGEMENT",
+    "Yoonbang Roh",
+    "Steve.Roh@cbre.com"
+   ],
+   [
+    "FINANCE",
+    "Warren Kim",
+    "warren.kim@cbre.com"
+   ],
+   [
+    "PEOPLE",
+    "Jen Kim",
+    "jen.kim@cbre.com"
+   ],
+   [
+    "LOCAL",
+    "Hyejin Chung",
+    "hyejin.chung@cbre.com"
+   ],
+   [
+    "T&T",
+    "HaeJin Kim",
+    "haejin.kim@cbrekorea.com"
+   ],
+   [
+    "DCS",
+    "N/A",
+    null
+   ],
+   [
+    "PROCUREMENT",
+    "ChaeJeong Lim",
+    "chaejeong.lim@cbre.com"
+   ],
+   [
+    "ADVISORY",
+    "Don Lim",
+    "Don.Lim@cbrekorea.com"
+   ],
+   [
+    "LEGAL",
+    "Yusuf Dockrat",
+    "Yusuf.dockrat@cbre.com"
+   ],
+   [
+    "ETHICS & COMPLIANCE",
+    "Sun Yeo",
+    "sungmo.yeo@cbre.com"
+   ],
+   [
+    "EAAS",
+    "Changman Koo",
+    "Changman.koo@cbre.com"
+   ]
+  ],
+  "customers": [
+   "Apple",
+   "Bank of America",
+   "Broadcom",
+   "Citi",
+   "Deutsche Bank",
+   "Honeywell",
+   "Macquarie",
+   "Keysight",
+   "MSFM",
+   "Philips",
+   "Sanofi",
+   "Syngenta"
+  ],
+  "locations": [
+   [
+    "CBRE Korea Headquarters",
+    "19th Floor, SC Bank Building, 47 Jong-ro, Jongno-gu",
+    "Seoul, Korea 03160"
+   ]
+  ]
+ },
+ "newzealand": {
+  "cards": [
+   {
+    "section": "Must Know Operations Facts - 1",
+    "title": "Relationship-Driven Market",
+    "body": [
+     "A small, highly-networked market where reputation, references and cultural fit (incl. Te Tiriti / Māori engagement) weigh heavily alongside price."
+    ]
+   },
+   {
+    "section": "Must Know Operations Facts - 2",
+    "title": "Safety, Seismic &amp; Distance",
+    "body": [
+     "Health and Safety at Work Act 2015 sets director due-diligence duties. Seismic ratings (%NBS — New Building Standard) affect building use; regional supply is thin beyond the metros."
+    ]
+   }
+  ],
+  "kpis": [
+   [
+    "15%",
+    "Goods and Services Tax"
+   ],
+   [
+    "28%",
+    "Corporate Tax Rate"
+   ]
+  ],
+  "regulatory": [
+   "Construction Contracts Act 2002 (progress payments &amp; retentions) · Health and Safety at Work Act 2015 · KiwiSaver employer contributions · regional trade licensing.",
+   "CBRE New Zealand is an Advisory-led entity.",
+   "Enterprise delivers through a managed partner panel. Self-delivery covers FM and contractor management; partners self-deliver across the metros and subcontract regionally."
+  ],
+  "trading": [
+   "Government is a major client. The NZ Government Procurement Rules require broader outcomes (social, environmental and economic), with emphasis on the Living Wage, carbon reduction and Māori / Pasifika business development.",
+   "Relationships and cultural competency matter.",
+   "In New Zealand, CBRE does not perform <b>HSE Red Scope</b> activities without the formal approval through the HSE compliance &amp; governance processes."
+  ],
+  "contacts": [
+   [
+    "HSE",
+    "Stefani Matic",
+    "stefani.Matic@cbre.com"
+   ],
+   [
+    "HSE",
+    "Deidre Cooper",
+    "Deidre.Cooper@cbre.com"
+   ],
+   [
+    "WORK YOUR WAY",
+    "Yasmin Uzunlar",
+    "Yasmin.Uzunlar@cbre.com"
+   ],
+   [
+    "FINANCE",
+    "Yoppie Bong",
+    "Yoppie.Bong@cbre.com"
+   ],
+   [
+    "LEGAL",
+    "Kiran Chetty",
+    "Kiran.Chetty@cbre.com"
+   ],
+   [
+    "PROCUREMENT",
+    "Michelle Candelario",
+    "Michelle.Candelario@cbre.com"
+   ],
+   [
+    "PEOPLE",
+    "Leire Perez",
+    "Leire.Perez@cbre.com"
+   ],
+   [
+    "PEOPLE",
+    "Jo Hendy",
+    "Jo.Hendy@cbre.com"
+   ],
+   [
+    "TALENT ACQUISITION",
+    "Afiq Coopey",
+    "Afiq.MohdNoor@cbre.com"
+   ],
+   [
+    "ETHICS & COMPLIANCE",
+    "Beth Hamer",
+    "beth.hamer@cbre.com"
+   ],
+   [
+    "SECURITY",
+    "Steve Pierce",
+    "Steve.Pierce@cbre.com"
+   ],
+   [
+    "T&T",
+    "Laura Meikle",
+    "Laura.Meikle@turntown.com"
+   ],
+   [
+    "GWS LOCAL",
+    "Tom Mineo",
+    "Thomas.Mineo@cbre.com"
+   ],
+   [
+    "ADVISORY",
+    "Phil Rowland",
+    "Phil.Rowland@cbre.com.au"
+   ],
+   [
+    "PROPERTY MANAGEMENT",
+    "James King",
+    "James.King@cbre.com.au"
+   ]
+  ],
+  "customers": [
+   "ANZ Bank",
+   "Apple",
+   "DXC",
+   "ExxonMobil",
+   "Honeywell",
+   "Iron Mountain",
+   "Macquarie",
+   "Microsoft",
+   "Mondelez",
+   "Tetra Pak"
+  ],
+  "locations": [
+   [
+    "CBRE New Zealand Headquarters",
+    "23–29 Albert Street, 1010",
+    "National hub & research base."
+   ]
+  ]
+ },
+ "singapore": {
+  "cards": [
+   {
+    "section": "Annual Calendar",
+    "title": "APAC Institute: August",
+    "body": [
+     "A key client event showcases market trends and key strategic priorities for APAC; clients come from all regions, sectors and businesses. A must-attend event for any stakeholders who want to operate in Asia."
+    ]
+   },
+   {
+    "section": "Must Know Operations Facts - 1",
+    "title": "Immigration Policy and Work Pass",
+    "body": [
+     "Singapore has strict immigration policies (40K PR per year), there are minimum requirements on various types of work pass. For employment passes (EP), professionals have a min salary requirement of 50K USD. Contact People team for more details."
+    ]
+   },
+   {
+    "section": "Must Know Operations Facts - 2",
+    "title": "Government-Linked Ecosystem (GLCs Influence the Market)",
+    "body": [
+     "Many major sectors are dominated by GLCs. Relationships and understanding procurement structures are critical to winning business. Decision making may appear commercial but often aligns with national strategic priorities."
+    ]
+   }
+  ],
+  "kpis": [
+   [
+    "9%",
+    "Goods and Services Tax"
+   ],
+   [
+    "17% / 20%",
+    "CPF Contribution"
+   ],
+   [
+    "60 days",
+    "Usual Payment terms"
+   ],
+   [
+    "17%",
+    "Corporate Tax Rate"
+   ]
+  ],
+  "regulatory": [
+   "Government contracts typically follow prompt payment policies (~30days ).",
+   "Singapore government provides grants and incentives to encourage businesses to adopt energy efficiency and improve productivity via technology and sustainability."
+  ],
+  "trading": [
+   "CBRE Singapore has self-performance capabilities for Mechanical Systems / Thermal Scanning and other minor projects.",
+   "CBRE Singapore maintains strong self-delivery capabilities across key technical and IFM services, supported by licensed operations in areas such as Transportation / Cafeteria services.",
+   "In Singapore, <b>HSE Red Scope</b> activities include drinking water compliance, emergency response, high-risk operations, regulated materials management, wastewater treatment &amp; catering services. All are performed in accordance with approved HSE compliance &amp; governance processes."
+  ],
+  "contacts": [
+   [
+    "HSE",
+    "Jaffar, Fazlan",
+    "Fazlan.Jaffar@cbre.com"
+   ],
+   [
+    "SALES",
+    "Messer, Jori",
+    "Jori.Messer@cbre.com"
+   ],
+   [
+    "TRANSACTION MANAGEMENT",
+    "Little, Hugh",
+    "Hugh.Little@cbre.com.sg"
+   ],
+   [
+    "FINANCE",
+    "Bong, Yoppie",
+    "Yoppie.Bong@cbre.com"
+   ],
+   [
+    "PEOPLE",
+    "Tan, Jayne",
+    "Jayne.Tan@cbre.com"
+   ],
+   [
+    "LOCAL",
+    "Tan, Chai Soon",
+    "ChaiSoon.Tan@cbre.com"
+   ],
+   [
+    "T&T",
+    "Chua, Michelle",
+    "Michelle.Chua@cbre.com"
+   ],
+   [
+    "DCS",
+    "Dilli, Tamilvanan",
+    "Tamilvanan.Dilli@cbre.com"
+   ],
+   [
+    "PROCUREMENT",
+    "Lee, Mika",
+    "Mika.Lee@cbre.com"
+   ],
+   [
+    "LEGAL",
+    "Dockrat, Yusuf",
+    "yusuf.dockrat@cbre.com"
+   ],
+   [
+    "ETHICS & COMPLIANCE",
+    "Davies, Tamara",
+    "Tamara.Davies@cbre.com"
+   ],
+   [
+    "ADVISORY",
+    "Armstrong, Moray",
+    "moray.armstrong@cbre.com.sg"
+   ]
+  ],
+  "customers": [
+   "Apple",
+   "Bank of America",
+   "Chevron",
+   "Citi",
+   "Deutsche Bank",
+   "DSM-Firmenich",
+   "Exxon Mobil",
+   "Iron Mountain",
+   "Macquarie",
+   "Meta",
+   "Sanofi",
+   "Tetrapak"
+  ],
+  "locations": [
+   [
+    "CBRE Singapore Headquarters",
+    "2 Tanjong Katong Road #06-01",
+    "Paya Lebar Quarter Tower 3 (PLQ 3)",
+    "Singapore 437161"
+   ],
+   [
+    "CBRE Singapore City Office",
+    "8 Marina Boulevard #16-01,",
+    "Tower 1 Marina Bay Financial Centre, Singapore 018981"
+   ]
+  ]
+ },
+ "taiwan": {
+  "cards": [
+   {
+    "section": "Taiwan Annual Calendar",
+    "title": "Account Engagement",
+    "body": [
+     "CBRE Taiwan periodically organizes account engagement activities each year, where platform team members visit sites to interact and engage with colleagues and clients."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 1",
+    "title": "Government Restriction",
+    "body": [
+     "Catering, Man guarding and Transportation are typically delivered via subcontracting (MA Model) due to licensing, liability and operational control considerations."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 2",
+    "title": "Regulations on Interviews",
+    "body": [
+     "The client is not allowed to conduct interviews by Taiwan Labor Law. Client may only provide job requirements and conditions to the agency, which is solely responsible for recruitment and interviewing."
+    ]
+   }
+  ],
+  "kpis": [
+   [
+    "5%",
+    "Goods and Services Tax"
+   ],
+   [
+    "6%",
+    "Labor Pension Contribution"
+   ],
+   [
+    "60 days",
+    "Usual Payment terms"
+   ],
+   [
+    "20%",
+    "Corporate Tax Rate"
+   ]
+  ],
+  "regulatory": [
+   "5% Goods and Service tax (VAT) applied on all services provided by CBRE",
+   "Payment terms (with vendors) are typically 60 days",
+   "Government contracts typically follow prompt payment policies (~30 days)",
+   "Employer contributes 6% to the employee Labor Pension Fund."
+  ],
+  "trading": [
+   "CBRE Taiwan has self-performance capabilities for HVAC/ Mechanical Systems and other minor projects.",
+   "Taiwan trading considerations include strict uniform invoice requirements, mandatory employer contributions (e.g. labor pension), detailed contractual expectations, and high price sensitivity in a competitive market environment.",
+   "In Taiwan, CBRE does not perform <b>HSE Red Scope </b>activities without formal approval through the HSE compliance &amp; governance processes."
+  ],
+  "contacts": [
+   [
+    "HSE",
+    "Chiang, Ariel",
+    "Ariel.Chiang@cbre.com"
+   ],
+   [
+    "SALES",
+    "Sun, Susan",
+    "Susan.Sun@cbre.com"
+   ],
+   [
+    "EAAS",
+    "Yu, Aaron",
+    "Aaron.Yu@cbre.com"
+   ],
+   [
+    "FINANCE",
+    "Hsu, Phoebe",
+    "Phoebe.Hsu@cbre.com"
+   ],
+   [
+    "PEOPLE",
+    "Sun, Chris",
+    "Chris.Sun@cbre.com.cn"
+   ],
+   [
+    "TALENT ACQUISITION",
+    "Tai, Sandy",
+    "Sandy.Tai@cbre.com"
+   ],
+   [
+    "ADVISORY",
+    "Liu, Cathy",
+    "cathy.liu@cbre.com"
+   ],
+   [
+    "PROCUREMENT",
+    "Chou, Jessica",
+    "Jessica.Chou@cbre.com"
+   ],
+   [
+    "T&T",
+    "Tay, Bahtiyar",
+    "Bahtiyar.Tay1@turntown.com"
+   ],
+   [
+    "ETHICS & COMPLIANCE",
+    "Fiona Ho",
+    "Fiona.ho3@cbre.com"
+   ],
+   [
+    "LEGAL",
+    "Sylvia He",
+    "sylvia.he@cbre.com"
+   ],
+   [
+    "LOCAL",
+    "Jessie Yang",
+    "jessie.yang1@cbre.com"
+   ],
+   [
+    "ADVISORY",
+    "Cary Chang",
+    "cary.chang@cbre.com"
+   ]
+  ],
+  "customers": [
+   "Apple",
+   "BOA",
+   "Citi",
+   "Deutsche Bank",
+   "ExxonMobil",
+   "Google",
+   "Iron Mountain",
+   "Meta",
+   "NVIDIA",
+   "Sanofi",
+   "Tetra Pak",
+   "Uber"
+  ],
+  "locations": [
+   [
+    "CBRE Taipei 101 Office",
+    "61 F., No. 7, Sec. 5, Xinyi Rd., Xinyi Dist., Taipei City,",
+    "Taiwan 110615,"
+   ],
+   [
+    "CBRE GWS Office",
+    "8 F., No. 132, Sec. 3, Minsheng E. Rd., Songshan Dist., Taipei City, Taiwan 105402"
+   ]
+  ]
+ },
+ "japan": {
+  "cards": [
+   {
+    "section": "Japan Calendar",
+    "title": "Platform + Account connections",
+    "body": [
+     "Pechakucha is scheduled on the 3rd Thursday of each month and brings together platform and account leadership for an agenda covering supplier introductions, account sharing, management updates, people recognition and community reports. Providing a key networking opportunity for attendees."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 1",
+    "title": "Cultural considerations",
+    "body": [
+     "<b>Relationship-driven culture: </b>Trust and long-term relationships key; face-to-face engagement highly valued",
+     "<b>High expectation for quality &amp; detail: </b>Strong focus on precision, cleanliness, and consistency in FM delivery",
+     "<b>Decision-making process: </b>Consensus-based, so may take time."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 2",
+    "title": "Employment norms",
+    "body": [
+     "Japan is a low‑litigation but high‑regulation employment market. Issues typically escalate through labor offices rather than courts. Success depends on strong documentation, compliant processes, and proactive employee communication, especially around working hours, contract renewals, and performance management."
+    ]
+   }
+  ],
+  "kpis": [
+   [
+    "10%",
+    "Consumption Tax"
+   ],
+   [
+    "20.42%",
+    "Withholding Tax"
+   ],
+   [
+    "60 days",
+    "Usual Payment terms"
+   ],
+   [
+    "30%",
+    "Corporate Tax Rate"
+   ]
+  ],
+  "regulatory": [
+   "Consumption Tax: Standard Rate is 10% (8% for specific food and beverage items) requiring &quot;Qualified Invoices&quot; with T-numbers for tax credits.",
+   "Withholding Tax: Non-residents face a 20.42% withholding tax on royalties and fees.",
+   "Corporate Tax: The effective corporate tax rate is approx. 30%, including &quot;pro-forma&quot; taxes on capital/payroll for companies exceeding JPY 100M capital.",
+   "Payment terms with suppliers are typically 60 days, <b>mandated from delivery of services not invoice date for SME suppliers</b>."
+  ],
+  "trading": [
+   "BOE businesses (excl. Property Management) operate in the <b>CBRE CM Solution K.K.</b> legal entity, and this is adopted for all local contracts e.g. LCAs.",
+   "Communication in English is not widely used; most clients, suppliers, and staff are monolingual. Documentation, digital tools, and communications must be in Japanese language.",
+   "Strong focus on safety and disaster preparedness for <b>earthquakes and typhoons</b>.",
+   "In Japan, <b>HSE Red Scopes </b>activities include Legionella testing, underground storage tanks (USTs) &amp; wastewater treatment. All are performed in accordance with approved HSE Compliance &amp; governance processes."
+  ],
+  "contacts": [
+   [
+    "HSE",
+    "Hashimoto, Akina",
+    "akina.hashimoto@cbre.com"
+   ],
+   [
+    "SALES",
+    "Messer, Jori",
+    "jori.messer@cbre.com"
+   ],
+   [
+    "TRANSACTION MANAGEMENT",
+    "Watabe, Mika",
+    "mika.watabe@cbre.com"
+   ],
+   [
+    "FINANCE",
+    "Nakajima, Hiroshi",
+    "hiroshi.nakajima@cbre.com"
+   ],
+   [
+    "PEOPLE",
+    "Maeda, Yukiko",
+    "yukiko.maeda@cbre.com"
+   ],
+   [
+    "LOCAL",
+    "Olango, Dick",
+    "dick.olango@cbre.com"
+   ],
+   [
+    "T&T",
+    "Mavridis, Scott",
+    "scott.mavridis@cbre.com"
+   ],
+   [
+    "PROCUREMENT",
+    "Ko, Haneka",
+    "haneka.ko@cbre.com"
+   ],
+   [
+    "DCS",
+    "Macintyre, Duncan",
+    "duncan.macintyre@cbre.com"
+   ],
+   [
+    "LEGAL",
+    "Dockrat, Yusuf",
+    "yusuf.dockrat@cbre.com"
+   ],
+   [
+    "ETHICS & COMPLIANCE",
+    "Teraoka, Kenjiro",
+    "kenjiro.teraoka@cbre.com"
+   ],
+   [
+    "ADVISORY",
+    "Tsuji, Takashi",
+    "takishi.tsuji@cbre.com"
+   ],
+   [
+    "EAAS",
+    "Kumakura, Hiroshi",
+    "hiroshi.kumakra@cbre.com"
+   ]
+  ],
+  "customers": [
+   "AMEX",
+   "Apple",
+   "Bosch",
+   "Bank of America",
+   "Citi",
+   "Coca Cola",
+   "Deutsche Bank",
+   "Keysight",
+   "Sanofi",
+   "Takeda",
+   "Tetra Pak",
+   "3M"
+  ],
+  "locations": [
+   [
+    "CBRE Japan Headquarters",
+    "CBRE K.K., Meiji Yasuda Seimei Building 21F, 2-1-1 Marunouchi, Chiyoda-ku, Tokyo 100-0005, Japan"
+   ],
+   [
+    "CBRE CM Solution K.K., Meiji Yasuda Seimei Building 17F, 2-1-1 Marunouchi, Chiyoda-ku, Tokyo 100-0005, Japan"
+   ]
+  ]
+ },
+ "india": {
+  "cards": [
+   {
+    "section": "India Annual Calendar",
+    "title": "Divisional Executive Leadership Meet",
+    "body": [
+     "Month of <b>July</b>",
+     "A key internal event for senior leaders across all lines of business to align on strategic priorities and areas of collaboration."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 1",
+    "title": "Operating Model",
+    "body": [
+     "India operates a true ‘BOE’ model across Local,  Enterprise and PM",
+     "CBRE offices are present in 15 major cities across the country."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 2",
+    "title": "Sri Lanka &amp; Bangladesh",
+    "body": [
+     "Sri Lanka &amp; Bangladesh operations are remotely supported from India. Local entities are registered but there is no CBRE office at present. Limited Principal Capability."
+    ]
+   }
+  ],
+  "kpis": [
+   [
+    "30 days",
+    "Usual Payment terms"
+   ],
+   [
+    "18%",
+    "Goods and Services Tax"
+   ]
+  ],
+  "regulatory": [
+   "18% Goods and Service tax (GST) applied on all services provided by CBRE",
+   "Payment terms (with vendors) are typically 60 days but ‘pay when paid’",
+   "Micro Small &amp; Medium (MSME) suppliers enjoy certain protection under statutory norms including a maximum payment term of 45 days. A large part of the supply chain fall under the MSME category."
+  ],
+  "trading": [
+   "Due to licensing issues and compliance guardrails, transport &amp; café services are offered as MA only.",
+   "Technical Services are delivered in a mixed model with CBRE staff doing engineering governance with technicians provided by vendors. There are no Mobile Tech teams at present.",
+   "CBRE India maintains strong self-delivery capabilities in key IFM services across sectors.",
+   "In India, <b>HSE Red Scope</b> activities include drinking water compliance through 3rd party laboratory testing, provision of operational data &amp; support for regulatory applications. All are performed in accordance with approved HSE compliance &amp; governance processes."
+  ],
+  "contacts": [
+   [
+    "HSE",
+    "Viswanathan C",
+    "Viswanathan.Chidambaram@cbre.com"
+   ],
+   [
+    "SALES",
+    "Rajiv Sharma",
+    "rajiv.sharma@cbre.com"
+   ],
+   [
+    "TRANSACTION MANAGEMENT",
+    "Nitin Rao",
+    "Nitin.Rao@cbre.co.in"
+   ],
+   [
+    "FINANCE",
+    "Satya Singh",
+    "Satya.Singh@cbre.co.in"
+   ],
+   [
+    "PEOPLE",
+    "Sakshi Khosla",
+    "Sakshi.Khosla@cbre.com"
+   ],
+   [
+    "LOCAL",
+    "Ashish Podar",
+    "ashish.podar@cbre.co.in"
+   ],
+   [
+    "T&T",
+    "Jaipreet Bedi",
+    "jaipreet.bedi@turntown.com"
+   ],
+   [
+    "DCS",
+    "Ramesh C",
+    "Ramesh.Chinnadurai@cbre.com"
+   ],
+   [
+    "PROCUREMENT",
+    "Amit Verma",
+    "Amit.Verma3@cbre.com"
+   ],
+   [
+    "ADVISORY",
+    "Ram Chandnani",
+    "Ram.Chandnani@cbre.co.in"
+   ],
+   [
+    "ETHICS & COMPLIANCE",
+    "Monica Sharma",
+    "monica.sharma@cbre.com"
+   ],
+   [
+    "LEGAL",
+    "Rahul Singh",
+    "rahul.singh@cbre.com"
+   ],
+   [
+    "ENGINEERING",
+    "Ravi Bhattaram",
+    "rahul.singh@cbre.com"
+   ]
+  ],
+  "customers": [
+   "AMEX",
+   "Apple",
+   "Adobe",
+   "BNY",
+   "Citi",
+   "Deutsche Bank",
+   "Exxon Mobil",
+   "Honeywell",
+   "Microsoft",
+   "StateStreet",
+   "UHG",
+   "Wells Fargo"
+  ],
+  "locations": [
+   [
+    "CBRE India Headquarters",
+    "2 6th & 7th Floor, DLF Square, M Block, Jacaranda Marg, DLF Phase 2, Gurugram, Haryana 122002"
+   ],
+   [
+    "CBRE India Registered Office",
+    "PTI Building, Ground Floor, 4 Parliament Street, New Delhi, Delhi 110001"
+   ]
+  ]
+ },
+ "indonesia": {
+  "cards": [
+   {
+    "section": "Must Know Operation Facts - 1",
+    "title": "Manpower Focused",
+    "body": [
+     "Indonesia FM is still manpower focused, Low FM tech penetration."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 2",
+    "title": "Minimum Wage",
+    "body": [
+     "Minimum wage is regulated per city. Every December, governments will announce the increment. Increment 3-7% per year."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 3",
+    "title": "Local Led",
+    "body": [
+     "Indonesia’s operation was led by Local GWS. EA are supported through country shared allocation, resulting in limited personnel resources ."
+    ]
+   }
+  ],
+  "kpis": [
+   [
+    "12%",
+    "Value Added Tax"
+   ],
+   [
+    "10-12%",
+    "BPJS Contribution"
+   ],
+   [
+    "60 days",
+    "Usual Payment terms"
+   ],
+   [
+    "22%",
+    "Corporate Tax Rate"
+   ]
+  ],
+  "regulatory": [
+   "VAT is legally set at 12%, but calculated using a formula → still effectively 11<b>% </b>for most transactions",
+   "All service fees are subject to 2% withholding tax",
+   "The cost of labour for cleaning, security, driver, and technicians highly depend on the minimum wages. Employers must consider many manpower-related obligations, such as BPJS, holiday bonuses (THR) and severance pay, when formulating prices."
+  ],
+  "trading": [
+   "Manpower is heavily regulated in Indonesia. Employers must consider many manpower-related obligations, such as holiday bonuses (THR) and severance pay, when formulating prices.",
+   "Local communities and unions have a significant influence in some industrial areas which can lead to security disruptions or unexpected costs.",
+   "In Indonesia, CBRE does not perform <b>HSE Red Scope </b>activities without formal approval through the HSE compliance &amp; governance process."
+  ],
+  "contacts": [
+   [
+    "HSE",
+    "Haris Risdiana",
+    "haris.risdiana@cbre.com"
+   ],
+   [
+    "SALES",
+    "Messer, Jori",
+    "Jori.Messer@cbre.com"
+   ],
+   [
+    "TRANSACTION MANAGEMENT",
+    "Angela Wibawa",
+    "angela.wibawa@cbre.com"
+   ],
+   [
+    "T&T",
+    "Umaya Indra",
+    "umaya.indra@turntown.com"
+   ],
+   [
+    "LOCAL",
+    "Faisal Muzakki",
+    "Faisal.muzakki@cbre.com"
+   ],
+   [
+    "PEOPLE",
+    "Asetya Prasetyo",
+    "asetya.prasetyo@cbre.com"
+   ],
+   [
+    "FINANCE",
+    "Wai Yee Tan",
+    "waiyee.tan@cbre.com"
+   ],
+   [
+    "PROCUREMENT",
+    "Indra",
+    "Indra.hermawan@cbre.com"
+   ],
+   [
+    "DCS",
+    "Rizky Ridho",
+    "rizky.ridhokharismanto@cbre.com"
+   ],
+   [
+    "ADVISORY",
+    "Angela Wibawa",
+    "angela.wibawa@cbre.com"
+   ],
+   [
+    "LEGAL",
+    "Yusuf Dockrat",
+    "yusuf.dockrat@cbre.com"
+   ],
+   [
+    "ETHICS & COMPLIANCE",
+    "Patrick Yeo",
+    "Patrick.yeo@cbre.com"
+   ],
+   [
+    "EAAS",
+    "Indra Hermawan",
+    "indra.hermawan@cbre.com"
+   ]
+  ],
+  "customers": [
+   "Apple",
+   "Baker Hughes",
+   "Bank Of America",
+   "Citi",
+   "Deutsche Bank",
+   "DSM-firmenich",
+   "Iron Mountain",
+   "Manulife",
+   "Kenvue",
+   "Meta",
+   "Microsoft",
+   "3M"
+  ],
+  "locations": [
+   [
+    "CBRE Indonesia Headquarters",
+    "WTC 5 Building 10th floor, Jalan Jenderal Sudirman Kav 29-31, Jakarta Selatan, DKI Jakarta"
+   ]
+  ]
+ },
+ "malaysia": {
+  "cards": [
+   {
+    "section": "Must Know Operation Facts - 1",
+    "title": "Labor availability &amp; foreign worker dependency",
+    "body": [
+     "Malaysia faces ongoing labor shortages and rising employment costs requiring realistic workforce planning and pricing strategies"
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 2",
+    "title": "Local regulation &amp; compliance",
+    "body": [
+     "Strict regulation govern scheduled waste management, wastewater treatment, security services, making compliance a critical operational requirement"
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 3",
+    "title": "Local market &amp; cultural dynamics",
+    "body": [
+     "Successful operations require understanding Malaysia’s multicultural workforce and diverse stakeholder expectations"
+    ]
+   }
+  ],
+  "kpis": [
+   [
+    "8%",
+    "Sales & Service Tax"
+   ],
+   [
+    "11% / 12%",
+    "EPF Contribution"
+   ],
+   [
+    "60 days",
+    "Usual Payment terms"
+   ],
+   [
+    "24%",
+    "Corporate Tax Rate"
+   ]
+  ],
+  "regulatory": [
+   "Tax inefficiency: potential double taxation, CBRE must charge SST on invoices unless it is deemed pass-through cost and does not contain a value-add element. Subcontractor invoices must be attached to client pass-through billing to show SST has already been paid.",
+   "CIDB Licensing: CBRE Malaysia holds a G7 license. CIDB levy is 0.125% of the total contract value for FM and projects exceeding RM500,000.",
+   "Withholding Tax: Payments to non-residents for technical services or royalty are subject to a 10% withholding tax."
+  ],
+  "trading": [
+   "CBRE Malaysia maintains strong self-delivery capabilities across key technical and IFM services.",
+   "RBA Compliance (E&amp;E Manufacturing): while not a statutory law, alignment with the Responsible Business Alliance (RBA) Code of Conduct is a strict contractual requirement for FM providers serving the Electronics &amp; Electrical (E&amp;E) sector in Malaysia.",
+   "In Malaysia, <b>HSE Red Scope</b> activities include wastewater treatment plant management. All are performed in accordance with approved HSE compliance &amp; governance processes."
+  ],
+  "contacts": [
+   [
+    "HSE",
+    "Sarjit, Sarzeena",
+    "Sarzeena.Sarjit@cbre.com"
+   ],
+   [
+    "PEOPLE",
+    "Tan, Jayne",
+    "Jayne.Tan@cbre.com"
+   ],
+   [
+    "LOCAL",
+    "Jeevanesan",
+    "Jeevanesan.Selvanayagam@cbre.com"
+   ],
+   [
+    "FINANCE",
+    "Tan, Wai Yee",
+    "WaiYee.Tan@cbre.com"
+   ],
+   [
+    "T&T",
+    "Perumal, Kamalish",
+    "Kamalish.Perumal@cbre.com"
+   ],
+   [
+    "PROCUREMENT",
+    "Er, Tiffany",
+    "Tiffany.Er@cbre.com"
+   ],
+   [
+    "EAAS",
+    "Chai, Ivan",
+    "Ivan.Chai@cbre.com"
+   ],
+   [
+    "LEGAL",
+    "Natasha Ng",
+    "Natasha.ng@cbre.com"
+   ],
+   [
+    "ETHICS & COMPLIANCE",
+    "Patrick Yeo",
+    "Patrick.yeo@cbre.com"
+   ],
+   [
+    "SALES",
+    "Messer, Jori",
+    "Jori.Messer@cbre.com"
+   ],
+   [
+    "ADVISORY",
+    "Joel Lum",
+    "Joel.lum@cbre.com"
+   ],
+   [
+    "TRANSACTION MANAGEMENT",
+    "Joel Lum",
+    "Joel.lum@cbre.com"
+   ],
+   [
+    "DCS",
+    "Tamilvanan Dilli",
+    "Tamilvanan.Dilli@cbre.com"
+   ]
+  ],
+  "customers": [
+   "AMEX",
+   "Bosch",
+   "Broadcom",
+   "Citi",
+   "ExxonMobil",
+   "Honeywell",
+   "Kimberly Clark",
+   "Iron Mountain",
+   "Keysight",
+   "Motorola",
+   "Sandisk",
+   "WD"
+  ],
+  "locations": [
+   [
+    "CBRE GWS Malaysia",
+    "Level 18, Unit 18.01,                                        1 Powerhouse Persiaran Bandar Utama Bandar Utama, 47800 Petaling Jaya, Selangor, Malaysia"
+   ]
+  ]
+ },
+ "philippines": {
+  "cards": [
+   {
+    "section": "Philippines Annual Calendar",
+    "title": "Christmas &amp; Easter Holidays",
+    "body": [
+     "Key holidays drive extended leave and travel home, slowing most businesses except travel/retail. Annual shutdowns typically occur for one week within March/April and Dec 25–Jan 7. Avoid scheduling transitions or travel during these periods."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 1",
+    "title": "Cost Sensitivity",
+    "body": [
+     "Clients expect continuous cost innovation. CBRE must balance this with compliance, operational stability, and talent retention. Decisions for bids typically require several commercial/clarification discussions."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 2",
+    "title": "Business Continuity",
+    "body": [
+     "The Philippines sits in an active earthquake and volcanic region and is subject to numerous typhoons annually from July to October, while localized civil unrest may occur from time to time..  BCPs need to be ready and tested with teams trained to ensure continuous operations."
+    ]
+   }
+  ],
+  "kpis": [
+   [
+    "12%",
+    "Value Added Tax"
+   ],
+   [
+    "25%",
+    "Corporate Tax Rate"
+   ],
+   [
+    "60 days",
+    "Usual Payment terms"
+   ]
+  ],
+  "regulatory": [
+   "12% Value Added tax (VAT) applied on services provided by CBRE, excluding to exempt &amp; VAT zero-rated entities",
+   "0.75% local municipal tax is charged on all gross receipts including pass-through costs",
+   "Payment terms (with vendors) are typically 60 days",
+   "Regulations do not allow diminution of employee benefits while employees’ 13th month pay is a regulatory requirement, separate from CBRE discretionary bonus."
+  ],
+  "trading": [
+   "CBRE Philippines has self-performance capabilities for Electrical, Mechanical systems, Thermal Scanning and other trades, as well as preferred vendors for cleaning, security, transportation and cafeteria services.",
+   "Need to consider vendors’ capabilities for locations outside Metro Manila as not all vendors will have national coverage.",
+   "In the Philippines, CBRE does not perform <b>HSE Red Scope </b>activities without formal approval through the HSE compliance &amp; governance processes."
+  ],
+  "contacts": [
+   [
+    "HSE",
+    "Domingo, Marc",
+    "Marc.Domingo@cbre.com"
+   ],
+   [
+    "SALES",
+    "Messer, Jori",
+    "Jori.Messer@cbre.com"
+   ],
+   [
+    "TRANSACTION MANAGEMENT",
+    "Little, Hugh",
+    "Hugh.Little@cbre.com.sg"
+   ],
+   [
+    "FINANCE",
+    "Torres, Veronica",
+    "Veronica.Torres@cbre.com"
+   ],
+   [
+    "PEOPLE",
+    "Garbida, Jamie",
+    "Jamie.Garbida@cbre.com"
+   ],
+   [
+    "LOCAL",
+    "Manzano, John",
+    "John.Manzano@cbre.com"
+   ],
+   [
+    "T&T",
+    "Gilliard, Mark",
+    "Mark.Gilliard@cbre.com"
+   ],
+   [
+    "DCS",
+    "Tan, Johnnie",
+    "Johnnie.Tan@cbre.com"
+   ],
+   [
+    "PROCUREMENT",
+    "Daculla, Melvin",
+    "Melvin.Daculla@cbre.com"
+   ],
+   [
+    "ADVISORY",
+    "Espinosa, Jie",
+    "Jie.Espinosa@cbre.com"
+   ],
+   [
+    "LEGAL",
+    "Yusuf Dockrat",
+    "yusuf.dockrat@cbre.com"
+   ],
+   [
+    "ETHICS & COMPLIANCE",
+    "Stephanie Chavez-Lacson",
+    "Stephanie.Chavez-lacson@cbre.com"
+   ],
+   [
+    "EAAS",
+    "Edmond Porazo",
+    "Edmond.Porazo@cbre.com"
+   ]
+  ],
+  "customers": [
+   "AMEX",
+   "Chevron",
+   "Citi",
+   "Deutsche Bank",
+   "Iron Mountain",
+   "Macquarie",
+   "Manulife",
+   "Meta",
+   "Northern Trust",
+   "UHG",
+   "Wells Fargo",
+   "Western Digital"
+  ],
+  "locations": [
+   [
+    "CBRE Philippines",
+    "15th Floor, M1 Tower",
+    "H.V. dela Costa St., Salcedo Village",
+    "Makati City 1227",
+    "Philippines"
+   ]
+  ]
+ },
+ "hongkong": {
+  "cards": [
+   {
+    "section": "Annual Calendar",
+    "title": "Events",
+    "body": [
+     "CBRE Supplier event will be held in Q3.",
+     "CBRE Client Appreciation Dinner will be held in Q4."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 1",
+    "title": "Government Restriction",
+    "body": [
+     "Labor supply is permitted but tightly regulated, requiring clear employment contracts and compliance with the Employment Ordinance",
+     "Catering and Transportation are typically delivered via subcontracting (MA model) due to licensing, liability and operational control considerations."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 2",
+    "title": "Transfer Personnel Restriction",
+    "body": [
+     "No <b>TUPE </b>framework in Hong Kong, requiring a <b>termination and re-hiring </b>model for workforce transitions between client or vendors (no automatic transfer of employment)."
+    ]
+   }
+  ],
+  "kpis": [
+   [
+    "0%",
+    "Goods and Services Tax"
+   ],
+   [
+    "5% / 5%",
+    "MPF Contribution"
+   ],
+   [
+    "60 days",
+    "Usual Payment terms"
+   ],
+   [
+    "16.5%",
+    "Corporate Tax Rate"
+   ]
+  ],
+  "regulatory": [
+   "Hong Kong does not impose VAT or GST on services, making it a tax-efficient environment for service delivery",
+   "Payment terms (with vendors) are typically between 30-60 days depending on contract structure",
+   "Government contracts generally follow prompt payment practices (~30 days )",
+   "Employers are required to contribute to Mandatory Provident Fund (MPF) schemes for employees",
+   "Hong Kong offers a simple tax regime with a two-tier profits tax system (lower rate may apply on initial profit brands)."
+  ],
+  "trading": [
+   "CBRE Hong Kong typically relies on a mix of self-perform and subcontracting with stronger emphasis on vendor management and compliance control rather than a large-scale in-house M&amp;E delivery.",
+   "Tight labor market conditions and challenges in sourcing qualified talent within mobilization timelines may affect operational readiness, requiring proactive recruitment planning and talent pipeline development.",
+   "In Hong Kong, <b>HSE Red Scope </b>activities include underground storage tanks (USTs) management for fuel. All are performed in accordance with approved HSE compliance &amp; governance processes."
+  ],
+  "contacts": [
+   [
+    "EAAS",
+    "Patrick Tse",
+    "Patrick.Tse@cbre.com.hk"
+   ],
+   [
+    "SALES",
+    "Sun, Susan",
+    "Susan.Sun@cbre.com"
+   ],
+   [
+    "FINANCE",
+    "Zoey Lam",
+    "Zoey.Lam@cbre.com"
+   ],
+   [
+    "HSE",
+    "Joe Wong",
+    "Joe.Wong1@cbre.com"
+   ],
+   [
+    "PEOPLE",
+    "Connie Chan",
+    "Connie.Chan@cbre.com"
+   ],
+   [
+    "PROCUREMENT",
+    "Joey Leung",
+    "Joey.Leung@cbre.com"
+   ],
+   [
+    "ADVISORY",
+    "Ada Fung",
+    "Ada.Fung@cbre.com.hk"
+   ],
+   [
+    "LOCAL",
+    "Alan Siu",
+    "Alan.Siu@cbre.com"
+   ],
+   [
+    "T&T",
+    "Colin McBride",
+    "mcbricol@turntown.com"
+   ],
+   [
+    "DCS",
+    "Dean Jones",
+    "Dean.Jones@cbre.com"
+   ],
+   [
+    "TRANSACTION MANAGEMENT",
+    "Gwyn Huang",
+    "Gwyn.Huang@cbre.com.hk"
+   ],
+   [
+    "LEGAL",
+    "Sylvia He",
+    "sylvia.he@cbre.com"
+   ],
+   [
+    "ETHICS & COMPLIANCE",
+    "Tamara Davies",
+    "tamara.davies@cbre.com"
+   ]
+  ],
+  "customers": [
+   "Apple",
+   "Bank of America",
+   "CITI",
+   "Citadel",
+   "Deutsche Bank",
+   "Fidelity",
+   "Macquarie",
+   "Manulife",
+   "Meta"
+  ],
+  "locations": [
+   [
+    "CBRE Kowloon Office",
+    "Manulife Place",
+    "Level 19, Office No. 3, 348 Kwun Tong Road,",
+    "Ngau Tau Kok, Kowloon."
+   ],
+   [
+    "CBRE Hong Kong Office",
+    "One Pacific Place",
+    "Level 27, 88 Queensway,",
+    "Admiralty, Hong Kong"
+   ]
+  ]
+ },
+ "thailand": {
+  "cards": [
+   {
+    "section": "Must Know Operation Facts - 1",
+    "title": "Thai&#x27;s Labor Law",
+    "body": [
+     "At CBRE, the probationary period is 119 days. Where performance does not meet expectations, non-confirmation should be initiated one payroll cycle in advance, with at least 30 days&#x27; notice prior the termination."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 2",
+    "title": "Relationship-First Market",
+    "body": [
+     "Trust and partnership chemistry outweigh price in tender decisions, and decision-making authority typically involves multiple influencers requiring 3–6-month sales cycles. Win initial contracts on relationship strength and service quality (not aggressive pricing); renewals provide the real margin opportunities."
+    ]
+   },
+   {
+    "section": "Must Know Operation Facts - 3",
+    "title": "Regulatory &amp; Compliance Complexity – Fragmented, Evolving, Locally Nuanced",
+    "body": [
+     "Building codes, condominium law, and labor/environmental regulations have inconsistent enforcement across provinces."
+    ]
+   }
+  ],
+  "kpis": [
+   [
+    "7%",
+    "Goods and Services Tax"
+   ],
+   [
+    "5%",
+    "Provident Fund Contribution"
+   ],
+   [
+    "60 days",
+    "Usual Payment terms"
+   ],
+   [
+    "3%",
+    "Withholding Tax Rate"
+   ]
+  ],
+  "regulatory": [
+   "7% Good and Service tax (GST) applied on all services provided by CBRE.",
+   "Payment terms (with vendors) are typically 30-45  days for domestic vendors, but longer for international which is 60-90 days.",
+   "Government contracts typically follow prompt payment policies (~30days).",
+   "Thailand 4.0, Board of Investment (BOI) privileges, energy efficiency certifications, and renewable energy programs."
+  ],
+  "trading": [
+   "CBRE Thailand has self-performance capabilities for Mechanical Systems and other minor projects.",
+   "Thai clients accept service delays when communication is proactive and relationships are strong; relationship management and senior engagement can resolve quality lapses. Digital adoption lags significantly – LINE, email, and phone calls still dominate over formal digital platforms.",
+   "In Thailand, <b>HSE Red Scope</b> activities include catering, transportation &amp; wastewater treatment services. All are performed in accordance with approved HSE compliance &amp; governance processes."
+  ],
+  "contacts": [
+   [
+    "SALES",
+    "Messer, Jori",
+    "Jori.Messer@cbre.com"
+   ],
+   [
+    "TRANSACTION MANAGEMENT",
+    "Maneerat Vichitrattana",
+    "Maneerat.Vichitrattana@cbre.com"
+   ],
+   [
+    "HSE",
+    "Weena Subsanga",
+    "Weena.Subsanga@cbre.com"
+   ],
+   [
+    "LOCAL",
+    "Stephen Lockley",
+    "stephen.lockley@cbre.com"
+   ],
+   [
+    "DCS",
+    "Chanont Jiwattayakul",
+    "Chanont.Jiwattayakul@cbre.com"
+   ],
+   [
+    "PEOPLE",
+    "Wimonsiri Nimboonchat",
+    "Wimonsiri.Nimboonchat@cbre.com"
+   ],
+   [
+    "T&T",
+    "Charles Cain",
+    "Charles.Cain@turntown.com"
+   ],
+   [
+    "LEGAL",
+    "Yusuf Dockrat",
+    "yusuf.dockrat@cbre.com"
+   ],
+   [
+    "EAAS",
+    "Kritdanai Kungamut",
+    "kritdanai.kungamut@cbre.com"
+   ],
+   [
+    "FINANCE",
+    "Veronica Torres",
+    "VeronicaMarie.Torres@cbre.com"
+   ],
+   [
+    "ADVISORY",
+    "Roongrat Veeraparkkaroon",
+    "roongrat.veeraparkkaroon@cbre.com"
+   ],
+   [
+    "ETHICS & COMPLIANCE",
+    "Stephanie Chavez-Lacson",
+    "stephaine.chavez-lacson@cbre.com"
+   ],
+   [
+    "PROCUREMENT",
+    "Nichapha Chotemongkolsakul",
+    "nichapha.chotemongkolsakul@cbre.com"
+   ]
+  ],
+  "customers": [
+   "AMEX",
+   "Bank of America",
+   "Bosch",
+   "Chevron",
+   "Citi",
+   "Deutsche Bank",
+   "Exxon Mobil",
+   "Iron Mountain",
+   "Meta",
+   "Sanofi",
+   "Syngenta",
+   "Western Digital"
+  ],
+  "locations": [
+   [
+    "CBRE Thailand",
+    "548 One City Centre, Floor 46 and 45 ( Unit 01-02),",
+    "Ploenchit Road, Lumpini, Pathumwan,",
+    "Bangkok 10330, Thailand"
+   ]
+  ]
+ },
+ "australia": {
+  "cards": [
+   {
+    "section": "Must Know Operations Facts - 1",
+    "title": "Labour &amp; Industrial Relations",
+    "body": [
+     "Among APAC&#x27;s highest labour costs and a strong industrial-relations system (Fair Work, modern awards, enterprise agreements). Price for compliance and on-costs (12% super), not headcount alone."
+    ]
+   },
+   {
+    "section": "Must Know Operations Facts - 2",
+    "title": "Safety &amp; ESG",
+    "body": [
+     "Work Health &amp; Safety (WHS) law carries personal director liability. NABERS ratings, mandatory climate reporting and modern-slavery / Indigenous-procurement rules increasingly shape contracts."
+    ]
+   }
+  ],
+  "kpis": [
+   [
+    "10%",
+    "Goods and Services Tax"
+   ],
+   [
+    "30%",
+    "Corporate Tax Rate"
+   ]
+  ],
+  "regulatory": [
+   "Payment terms are 30–60 days.",
+   "Security of Payment laws (state-based) guarantee timely progress payments on construction &amp; fit-out works.",
+   "Fair Work Act &amp; 12% super apply to site labour; trades need state licences.",
+   "Self-delivery centres on FM, workplace experience and reactive maintenance; trade, project and specialist works run through a licensed preferred-partner panel.",
+   "State and federal programmes offer energy-efficiency and emissions incentives."
+  ],
+  "trading": [
+   "Federal and State Governments are major buyers.",
+   "Procurement is tightly regulated (Commonwealth and state rules) with Indigenous-procurement targets, local-content and social-procurement requirements, and modern-slavery reporting. Access is often via approved panels.",
+   "CBRE Australia is an Advisory-led entity.",
+   "In Australia, CBRE does not perform <b>HSE Red Scope </b>activities without formal approval through the HSE compliance &amp; governance process."
+  ],
+  "contacts": [
+   [
+    "HSE",
+    "Stefani Matic",
+    "stefani.Matic@cbre.com"
+   ],
+   [
+    "HSE",
+    "Deidre Cooper",
+    "Deidre.Cooper@cbre.com"
+   ],
+   [
+    "WORK YOUR WAY",
+    "Yasmin Uzunlar",
+    "Yasmin.Uzunlar@cbre.com"
+   ],
+   [
+    "FINANCE",
+    "Yoppie Bong",
+    "Yoppie.Bong@cbre.com"
+   ],
+   [
+    "LEGAL",
+    "Kiran Chetty",
+    "Kiran.Chetty@cbre.com"
+   ],
+   [
+    "PROCUREMENT",
+    "Michelle Candelario",
+    "Michelle.Candelario@cbre.com"
+   ],
+   [
+    "PEOPLE",
+    "Leire Perez",
+    "Leire.Perez@cbre.com"
+   ],
+   [
+    "PEOPLE",
+    "Jo Hendy",
+    "Jo.Hendy@cbre.com"
+   ],
+   [
+    "TALENT ACQUISITION",
+    "Afiq Coopey",
+    "Afiq.MohdNoor@cbre.com"
+   ],
+   [
+    "ETHICS & COMPLIANCE",
+    "Beth Hamer",
+    "beth.hamer@cbre.com"
+   ],
+   [
+    "SECURITY",
+    "Steve Pierce",
+    "Steve.Pierce@cbre.com"
+   ],
+   [
+    "T&T",
+    "Laura Meikle",
+    "Laura.Meikle@turntown.com"
+   ],
+   [
+    "GWS LOCAL",
+    "Tom Mineo",
+    "Thomas.Mineo@cbre.com"
+   ],
+   [
+    "ADVISORY",
+    "Phil Rowland",
+    "Phil.Rowland@cbre.com.au"
+   ],
+   [
+    "PROPERTY MANAGEMENT",
+    "James King",
+    "James.King@cbre.com.au"
+   ]
+  ],
+  "customers": [
+   "Amex",
+   "Bank of America",
+   "Citi",
+   "Deutsche Bank",
+   "DXC",
+   "ExxonMobil",
+   "Honeywell",
+   "Macquarie",
+   "Microsoft",
+   "Rio Tinto"
+  ],
+  "locations": [
+   [
+    "CBRE Sydney Headquarters",
+    "363 George Street, NSW 2000",
+    "National hub for Pacific BOE Enterprise."
+   ]
+  ]
+ }
+};
+
+/* =====================================================================
    RENDERING
    ===================================================================== */
 const $ = s => document.querySelector(s);
@@ -759,6 +2933,60 @@ function mapBlock(d, name){
   return `<div class="map-box"><div class="map-placeholder"><strong>${name} site map</strong><span>Google My Maps embed pending</span></div></div>`;
 }
 
+/* ---------- Page 2: Critical Considerations for Bidding & Trading (slide 3) ---------- */
+const esc = s => String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+
+function renderPage2(c){
+  const p = PAGE2[c.key];
+  if (!p) return "";
+  const cards = p.cards.map(k => `<div>
+      <h2>${esc(k.section)}</h2>
+      <div class="fact-card"><div class="ftitle">${k.title}</div>${k.body.map(b=>`<p>${b}</p>`).join("")}</div>
+    </div>`).join("");
+  const kpis = p.kpis.map(([v,l]) => `<div class="kpi"><div class="num">${esc(v)}</div><div class="lbl">${esc(l)}</div></div>`).join("");
+  const bullets = arr => `<ul class="p2-bullets">${arr.map(b=>`<li>${b}</li>`).join("")}</ul>`;
+  const contacts = p.contacts.map(([role,name,email]) => `<div class="kc">
+      <div class="krole">${esc(role)}</div>
+      <div class="kname">${esc(name)}</div>
+      ${email ? `<a href="mailto:${esc(email)}">${esc(email)}</a>` : ""}
+    </div>`).join("");
+  const customers = p.customers.map(n => `<span>${esc(n)}</span>`).join("");
+  const locations = p.locations.map(([name,...addr]) => `<div class="loc">
+      <div class="lname">${esc(name)}</div>
+      <div class="laddr">${addr.map(esc).join("<br>")}</div>
+    </div>`).join("");
+  return `
+    <div class="page-break"></div>
+    <div class="p2-head">
+      <div>
+        <p class="cp-kicker">Country Overview</p>
+        <h1 class="p2-title">Critical Considerations for Bidding &amp; Trading in <em>${esc(c.name)}</em></h1>
+      </div>
+      <div class="p2-cards">${cards}</div>
+    </div>
+    <div class="rule"></div>
+    <div class="p2-body">
+      <div class="cp-col">
+        <h2>Other Regulatory, Tax &amp; Financial Considerations</h2>
+        <div class="kpis">${kpis}</div>
+        ${bullets(p.regulatory)}
+      </div>
+      <div class="cp-col">
+        <h2>Other Trading Considerations</h2>
+        ${bullets(p.trading)}
+        <div class="p2-sub">Key Enterprise Customers</div>
+        <div class="customers">${customers}</div>
+      </div>
+      <div class="cp-col p2-contacts">
+        <h2>Key Contacts</h2>
+        <div class="kcontacts">${contacts}</div>
+        <div class="p2-sub">${p.locations.length > 1 ? "Locations" : "Location"}</div>
+        <div class="locations">${locations}</div>
+      </div>
+    </div>
+    <div class="cp-foot"><span>Confidential &amp; Proprietary | &copy; 2026 CBRE, Inc.</span><span>${esc(c.name)}</span></div>`;
+}
+
 function renderCountry(c){
   const d = c.data;
   $("#cp").innerHTML = `
@@ -809,9 +3037,10 @@ function renderCountry(c){
         </div>
       </div>
     </div>
-    <div class="cp-foot"><span>Confidential &amp; Proprietary | &copy; 2026 CBRE, Inc.</span><span>${c.name}</span></div>`;
+    <div class="cp-foot"><span>Confidential &amp; Proprietary | &copy; 2026 CBRE, Inc.</span><span>${c.name}</span></div>
+    ${renderPage2(c)}`;
   $("#jump").value = c.key;
-  document.title = `${c.name} | APAC Enterprise Country Overview`;
+  document.title = `${c.name} | APAC Enterprise Country Factbooks`;
 }
 
 function route(){
@@ -825,7 +3054,7 @@ function route(){
   } else {
     $("#country").classList.add("hidden");
     $("#landing").classList.remove("hidden");
-    document.title = "APAC Enterprise Country Overview";
+    document.title = "APAC Enterprise Country Factbooks";
     if (key !== "home") history.replaceState(null,"","#home");
   }
 }
